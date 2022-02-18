@@ -16,3 +16,4 @@ pom.xml
 *.json
 *.map
 /resources/public/cljs-out
+*.calva-repl
