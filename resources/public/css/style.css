@@ -1,0 +1,241 @@
+/* some style */
+
+body {
+    background-color: #fefffe;
+    margin: 0;
+}
+
+#app {
+    margin: 2em;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 240%;
+    color: deeppink;
+}
+
+h2, h3, h4 {
+    font-weight: normal;
+}
+.padded {
+    padding: 2ex;
+    margin: 2ex;
+}
+
+#board, #report-panel {
+    float: left;
+    border: solid 3px grey;
+    min-width: 330px;
+    min-height: 400px;
+}
+
+#score-bar {
+    width: 100%;
+}
+
+.word-input {
+    margin-bottom: 4ex;
+}
+
+#word-input {
+    font-size: 200%;
+    text-align: center;
+}
+
+.letters {
+    position: relative;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.letter {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 200%;
+
+    border: solid 1px green;
+    border-radius: 40px;
+    padding: 1ex;
+    margin: 10px;
+    background-color: #efe;
+    width: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.letter.middle {
+    /* line-height: 200%; */
+    margin-top: 1.5ex;
+    margin-bottom: 1.5ex;
+    color: deeppink;
+}
+
+.input.middle-letter {
+    color: deeppink;
+}
+
+.input.valid-letter {
+    color: black;
+}
+
+.input.invalid-letter {
+    color: grey;
+}
+
+.letter.clicked {
+    background-color: #ffc;
+}
+
+div#buttons {
+    margin: 2em;
+    text-align: center;
+}
+
+button {
+    box-shadow: 0px 6px 14px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:11px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+button:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+button:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+
+@keyframes blinkingText{
+    0%{     color: #7cfc00;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    60%{    color:transparent;  }
+    100%{   color: #7cfc00;    }
+}
+
+span.input.cursor {
+    animation:blinkingText 1.5s infinite;
+    text-decoration: blink;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.animated {
+    -webkit-animation-duration: 10s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOut {
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fadeOut {
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fade-out {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+.message {
+    background-color: #ffd6fc;
+    color: #d33;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: sans;
+    width: 50%;
+    position: fixed;
+    z-index: 3;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    background-color: #ccc;
+    z-index: 1;
+
+}
+
+div.rankings {
+    width: 20em;
+    padding: 5em;
+    margin: 2em;
+    background-color: #eee;
+    border: dotted 1px grey;
+}
+
+div.rankings li {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 2em;
+    font-family: sans;
+    font-size: 85%;
+}
+
+
+/* Slider config  */
+/* Autoconfigured using http://danielstern.ca/range.css  */
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 7.95px 0;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6.1px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071ba;
+    border-radius: 5px;
+    border: 0.3px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid #0000ff;
+    height: 22px;
+    width: 20px;
+    border-radius: 9px;
+    background: #d5ffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8.25px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #3884a1;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6.1px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+
+
+    /* slider config; shamelessly stolen  from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */

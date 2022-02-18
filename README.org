@@ -1,0 +1,21 @@
+
+* To run this
+
+You will need to have lein and figwheel.  Start it like this:
+
+#+begin_src shell
+% lein fig:build
+#+end_src
+
+We expect dictionary at =/usr/share/dict/words=.  Change this
+in [[src/spelling_bee/game_generator.clc][game_generator.clc]] if it's elsewhere on your system.
+
+
+* License
+
+Copyright © 2020
+
+Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+
+
+
