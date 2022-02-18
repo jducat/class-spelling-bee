@@ -20,4 +20,6 @@
             "fig:test"  ["run" "-m" "figwheel.main" "-co" "test.cljs.edn" "-m" "spelling-bee.test-runner"]}
 
   :profiles {:dev {:dependencies [[com.bhauman/figwheel-main "0.2.5"]
-                                  [com.bhauman/rebel-readline-cljs "0.1.4"]]}})
+                                  [com.bhauman/rebel-readline-cljs "0.1.4"]]}}
+  
+  :uberjar-name "class-spelling-bee.jar")
