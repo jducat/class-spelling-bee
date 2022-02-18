@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/class-spelling-bee.jar clojure.main -m class-spelling-bee.web
+web: java $JVM_OPTS -cp target/class-spelling-bee.jar clojure.main -m spelling_bee.server
