@@ -11,7 +11,9 @@
                  [cljs-http "0.1.46"]
                  [reagent "0.10.0"]
                  [re-frame "0.12.0"]
-                 [environ "1.1.0"]]
+                 [environ "1.1.0"]
+                 [compojure "1.6.1"]
+                 [ring/ring-jetty-adapter "1.7.1"]]
 
   :source-paths ["src" "test"]
 
