@@ -17,5 +17,6 @@ Copyright © 2020
 
 Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
 
-
-
+Trying options for Procfile
+;web: java $JVM_OPTS -cp target/class-spelling-bee.jar clojure.main -m spelling-bee.app-server
+;web: java -jar target/uberjar/class-spelling-bee.jar
