@@ -12,7 +12,8 @@
 
 (defn handler [req]
   {:status 200
-   :headers {"Content-Type" "application/edn"}
+   :headers {"Content-Type" "application/json"}
+   ; Note - was/edn. This didnt load on heroku. Attempting different app
    :body (pr-str
           ;; Use this if you don't have the dictionaries to run
           ;; the game generator.
