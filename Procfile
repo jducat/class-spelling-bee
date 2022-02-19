@@ -1,1 +1,1 @@
-web: java -jar target/uberjar/class-spelling-bee.jar
+web: java -jar target/class-spelling-bee.jar

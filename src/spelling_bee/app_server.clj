@@ -12,7 +12,7 @@
 
 (defn handler [req]
   {:status 200
-   :headers {"Content-Type" "text/plain"}
+   :headers {"Content-Type" "application/edn"}
    ; Note - was/edn. This didnt load on heroku. Attempting different app
    :body (pr-str
           ;; Use this if you don't have the dictionaries to run
