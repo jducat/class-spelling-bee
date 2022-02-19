@@ -16,8 +16,9 @@
    :body (pr-str
           ;; Use this if you don't have the dictionaries to run
           ;; the game generator.
-          ;; (rand-nth [game/game1 game/game2])
-          (gen/new-game))})
+          (rand-nth [game/game1 game/game2])
+          ;(gen/new-game)
+          )})
 
 (defroutes app
   (GET "/" []
