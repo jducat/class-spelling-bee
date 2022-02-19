@@ -10,15 +10,6 @@
    [environ.core :refer [env]]))
 
 
-#_(defn handler [req]
-  {:status 200
-   :headers {"Content-Type" "application/edn"}
-   :body (pr-str
-          ;; Use this if you don't have the dictionaries to run
-          ;; the game generator.
-          ;; (rand-nth [game/game1 game/game2])
-          (gen/new-game))})
-
 (defn handler [req]
   {:status 200
    :headers {"Content-Type" "application/edn"}
@@ -30,7 +21,7 @@
 
 (defroutes app
   (GET "/" []
-    (handler))
+    (handler "req"))
   (ANY "*" []
     (route/not-found (slurp (io/resource "404.html")))))
 
