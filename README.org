@@ -20,3 +20,6 @@ Distributed under the Eclipse Public License either version 1.0 or (at your opti
 Trying options for Procfile
 ;web: java $JVM_OPTS -cp target/class-spelling-bee.jar clojure.main -m spelling-bee.app-server
 ;web: java -jar target/uberjar/class-spelling-bee.jar
+
+; need to roll back a few commits to the version before changing the application/edn
+; that version could be loaded locally and worked fine. Heroku built with no errors but when going to the page it just downloaded edn file.
