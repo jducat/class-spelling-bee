@@ -23,3 +23,4 @@ Trying options for Procfile
 
 ; need to roll back a few commits to the version before changing the application/edn
 ; that version could be loaded locally and worked fine. Heroku built with no errors but when going to the page it just downloaded edn file.
+:
